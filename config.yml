@@ -1,0 +1,20 @@
+---
+
+munge-gs:
+  # Z-score file. A .tsv file with first column corresponding to genes and other columns corresponding to z-scores of traits (one trait per column). One of pval-file and zscore-file is expected. Default is None.
+  zscores_file: '/Users/cvm/scDRS-test/data/zstat.txt'
+  # P-value file. A .tsv file with first column corresponding to genes and other columns corresponding to p-values of traits (one trait per column). One of pval-file and zscore-file is expected. Default is None.
+  pval_file: None
+  # Output scDRS .gs file.
+  out_file: '/Users/cvm/scDRS-test/results/geneset.gs'
+  # Maximum number of genes for each gene set. Default is 1000
+  n_max: 1000 
+  # Minimum number of genes for each gene set. Default is 100
+  n_min: 100 
+
+compute-score:
+  # Single-cell .h5ad file
+  hd5anndata: '/Users/cvm/scDRS-test/data/expr.h5ad'
+  # Species used for the gene expression and gene set data respectively. scDRS will translate between homolog genes if needed. Supported species: human and mouse.
+  h5ad_species: 'mouse'
+  gs_species: 'human'
