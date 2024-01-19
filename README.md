@@ -1,11 +1,16 @@
 # scDRS-test
+
 Take an input config file and output a command to run scDRS’ “munge-gs” and “compute-score” functions
 
 ## Purpose
 
+Demonstrate a simple interface based on user-provided configuration files.
+
 ## Input
 YAML configuration file with some scDRS parameters. 
+
 For documentation of the parameters included see the example config.yml file.
+
 Details available in the original scDRS docs: 
 https://martinjzhang.github.io/scDRS/reference_cli.html
 
@@ -14,7 +19,7 @@ A shell script named "run.sh" with the properly configured scDRS commands to run
 
 ## Usage
 
-Download
+**Download**
 
 ```
 git clone https://github.com/cvillamar/scDRS-test.git
@@ -25,7 +30,7 @@ cd ..
 
 Edit the config.yml file provided with the appropriate path to the input data (you can use the test data provided in the data subfolder)
 
-Run
+**Run**
 
 ```
 python src/run.py /Path/to/config.yml
